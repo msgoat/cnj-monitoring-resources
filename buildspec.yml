@@ -9,6 +9,14 @@ env:
     POSTGRES_USER_PASSWORD: "cloudtrain-codebuild-postgres:user-password"
 
 phases:
+  install:
+    on-failure: ABORT
+    commands:
+      - echo "Running phase install"
+      - echo "Download and run common installation script"
+      - aws s3 cp s3://s3-eu-west-1-cloudtrain-codebuild-shared/cloudtrain-codebuild-install.sh ~/
+      - chmod u+x ~/cloudtrain-codebuild-install.sh
+      - ~/cloudtrain-codebuild-install.sh
   pre_build:
     on-failure: ABORT
     commands:
