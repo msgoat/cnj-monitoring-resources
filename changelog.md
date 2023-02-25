@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [5.0.0] - 2023-02-24
+### Changed
+- upgraded to PostgreSQL 15
+- made setup of admin user and connection user with custom secret actually work
+
 ## [4.1.0] - 2022-06-08
 ### Added
 ### Changed
