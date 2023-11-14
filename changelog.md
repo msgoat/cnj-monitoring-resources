@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [6.1.0] - 2023-11-14
+### Added
+- added git tagging
+### Changed
+- completely reworked management of helm charts
+- completely reworked management of postgres secret
+
 ## [6.0.0] - 2023-06-09
 ### Changed
 - moved to new AWS CodeBuild build pipeline
